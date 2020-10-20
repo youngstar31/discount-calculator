@@ -1,0 +1,40 @@
+<!-- String Interpolation -->
+
+
+
+
+
+<body>
+    
+    <div class="container">
+
+
+        <header >
+            <h1>{{title}}</h1>
+        </header>
+        
+    
+    </div>
+    
+    
+    <div class="calculator">
+        <input type="text" class="calculator-screen" [value] ="num3"  />
+        <h3> Enter Price of Item and Discount Value</h3>
+        <div id="input1">
+             <input #num1 type="number" [value] ='num1' placeholder="Item Price">
+        </div>
+        <div id="input2">
+            <input #num2 type="number" [value] = 'num2' placeholder="Discount Value %">
+    
+        </div>
+        
+            <button type="button" class="calculate" (click) = 'calculation(num1.value, num2.value)'>Calculate</button>   
+        
+    
+    </div>
+
+
+    
+
+
+</body>
